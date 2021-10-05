@@ -1,0 +1,41 @@
+#toDo-form,
+#toDo-ul {
+  position: fixed;
+  top: 460px;
+  z-index: 2;
+}
+
+#toDo-form input {
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  margin: 10px;
+  color: white;
+  padding-left: 15px;
+}
+#toDo-form input::placeholder {
+  color: white;
+  margin-left: 10px;
+  font-size: 15px;
+}
+#toDo-ul {
+  position: absolute;
+  width: 150px;
+  height: 300px;
+  /* background-color: tomato; */
+  top: 550px;
+  right: 30px;
+  z-index: 0;
+}
+
+#toDo-ul li {
+  margin: 5px 0px;
+  color: white;
+  font-size: 15px;
+}
+#toDo-ul li button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}

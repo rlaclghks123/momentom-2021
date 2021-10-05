@@ -1,0 +1,15 @@
+#weather {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+  font-size: 20px;
+  position: fixed;
+  right: 40px;
+  top: 30px;
+  color: white;
+}
+
+#weather span:first-child {
+  margin-right: 10px;
+}
