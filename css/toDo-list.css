@@ -1,9 +1,11 @@
+
 #toDo-form,
 #toDo-ul {
   position: fixed;
   top: 460px;
   z-index: 2;
 }
+
 
 #toDo-form input {
   background-color: inherit;
@@ -20,24 +22,32 @@
   font-size: 15px;
 }
 #toDo-ul {
+  
   position: absolute;
-  width: 100%;
+  width: 300px;
   box-sizing: border-box;
   margin-right: 300px;
   top: 550px;
+  right: -250px;
+  border: 0.01px solid white;
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-end; */
-  align-items: flex-end;
+  justify-content:center;
+  align-items: flex-start;
+  border-radius: 50px;
+  padding: 20px;
 }
 
 #toDo-ul li {
   margin: 5px 0px;
   color: white;
   font-size: 15px;
+  width: 100%;
+  border-bottom: 0.01px solid burlywood;
 }
 #toDo-ul li button {
   background-color: inherit;
   border: none;
   cursor: pointer;
+  margin-right: 15px;
 }
