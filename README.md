@@ -24,3 +24,17 @@
         사용: 
         - Math.floor, Math.random
 ---
+- - [x]  랜덤 background Img 구현
+
+        사용: 
+        - createElement 
+        - appendChild
+        - Math.floor, Math.random
+---
+- - [x]  Geolocation API를 활용한 날씨,지역 구현
+
+        사용: 
+        - navigator.geolocation.getCurrentPosition 
+        - fetch(url), .then(response), .then(data)
+  
+---
