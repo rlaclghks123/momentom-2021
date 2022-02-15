@@ -22,14 +22,14 @@
 - - [x]  랜덤 Quote 구현
 
         사용: 
-        - Math.floor, Math.random
+        - Math.floor, Math.random을 통해 무작위 선택
 ---
 - - [x]  랜덤 background Img 구현
 
         사용: 
         - createElement 
         - appendChild
-        - Math.floor, Math.random
+        - Math.floor, Math.random을 통해 무작위 선택
 ---
 - - [x]  Geolocation API를 활용한 날씨,지역 구현
 

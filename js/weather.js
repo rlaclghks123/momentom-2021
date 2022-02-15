@@ -21,7 +21,7 @@ function geoOk(position) {
 }
 
 function geoError() {
-    alert("Can`t Fint you. No weather for you");
+    console.log("Can`t Fint you. No weather for you");
 }
 
 navigator.geolocation.getCurrentPosition(geoOk, geoError);
