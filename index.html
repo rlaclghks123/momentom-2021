@@ -1,64 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
     <!-- weather -->
     <div id="weather">
-        <span></span>
-        <span></span>
+      <span></span>
+      <span></span>
     </div>
 
     <div id="box">
-        <!-- clock -->
-        <h2 id="clock">00:00:00</h2>
+      <!-- clock -->
+      <h2 id="clock">00:00:00</h2>
 
+      <!-- login-form -->
+      <form class="hide" id="login-form">
+        <input required placeholder="Write Your Name" />
+        <button>submit</button>
+      </form>
+      <h1 id="login-h1" class="hide"></h1>
 
-        <!-- login-form -->
-        <form class="hide" id="login-form">
-            <input required placeholder="Write Your Name">
-            <button>submit</button>
-        </form>
-        <h1 id="login-h1" class="hide"></h1>
-
-
-
-
-        <!-- toDo-List -->
-
-
+      <!-- toDo-List -->
+      <div class="toDoBox">
         <form id="toDo-form">
-            <input type="text" placeholder="Write to Do">
+          <input type="text" placeholder="Write to Do" />
         </form>
-        <ul id="toDo-ul">
-
-        </ul>
-
-
-
-
-
-
-        <!-- quote -->
-        <div id="quote">
-            <span></span>
-            <span></span>
+        <div class="toDoListBox">
+          <div class="reactBox">
+            <button></button>
+            <button></button>
+            <button></button>
+          </div>
+          <ul id="toDo-ul"></ul>
         </div>
+      </div>
+      <button id="toDoListBoxBtn">ToDo List</button>
 
+      <!-- quote -->
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
     </div>
-</body>
-<script src="js/greeting.js"></script>
-<script src="js/clock.js"></script>
-<script src="js/quote.js"></script>
-<script src="js/bgImg.js"></script>
-<script src="js/toDoList.js"></script>
-<script src="js/weather.js"></script>
-
+  </body>
+  <script src="js/greeting.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/quote.js"></script>
+  <script src="js/bgImg.js"></script>
+  <script src="js/toDoList.js"></script>
+  <script src="js/weather.js"></script>
 </html>

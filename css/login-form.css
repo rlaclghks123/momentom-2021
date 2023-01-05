@@ -4,8 +4,13 @@
 #login-form,
 #login-h1 {
   position: fixed;
-  top: 380px;
+  top: 330px;
 }
+
+#login-form {
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
 #login-form input {
   background-color: inherit;
   border: none;
@@ -23,7 +28,7 @@
 
 #login-h1 {
   color: white;
-  margin: 30px 0px;
+  margin: 10px 0px;
   font-size: 30px;
   font-weight: 600;
 }
