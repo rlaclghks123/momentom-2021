@@ -36,7 +36,7 @@ function paintToDo(newToDoObj) {
   button.addEventListener('click', deleteToDo);
 }
 
-function handleSubmit(event) {
+function handleToDoFormSubmit(event) {
   event.preventDefault();
   const newToDo = toDoInput.value;
   toDoInput.value = '';
@@ -49,31 +49,31 @@ function handleSubmit(event) {
   saveToDo();
 }
 
-function handleCloseBtn(e) {
+function handleToDoListCloseBtn() {
   toDoListBox.style.display = 'none';
   toDoListBox.classList.remove('expand');
 }
 
-function handleOpenBtn(e) {
+function handleToDoListOpenBtn(e) {
   console.log(e);
   toDoListBox.style.display = 'flex';
 }
 
-function handleDownSizeBtn(e) {
+function handleToDoDownSizeBtn() {
   toDoListBox.classList.remove('expand');
 }
 
-function handleExpandBtn(e) {
+function handleToDoExpandBtn() {
   toDoListBox.classList.add('expand');
 }
 
-toDoForm.addEventListener('submit', handleSubmit);
-toDoListBoxOpenBtn.addEventListener('click', handleOpenBtn);
-reactCloseBtn.addEventListener('click', handleCloseBtn);
+toDoForm.addEventListener('submit', handleToDoFormSubmit);
+toDoListBoxOpenBtn.addEventListener('click', handleToDoListOpenBtn);
+reactCloseBtn.addEventListener('click', handleToDoListCloseBtn);
 
-toDoListBoxOpenBtn.addEventListener('click', handleOpenBtn);
-reactDownSizeBtn.addEventListener('click', handleDownSizeBtn);
-reactExpandBtn.addEventListener('click', handleExpandBtn);
+toDoListBoxOpenBtn.addEventListener('click', handleToDoListOpenBtn);
+reactDownSizeBtn.addEventListener('click', handleToDoDownSizeBtn);
+reactExpandBtn.addEventListener('click', handleToDoExpandBtn);
 
 const savedToDo = localStorage.getItem(TODO_KEY);
 
