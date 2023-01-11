@@ -16,10 +16,14 @@ function saveToDo() {
 }
 
 function deleteToDo(event) {
-  const li = event.target.parentElement;
-  li.remove();
-  toDos = toDos.filter((item) => item.id != parseInt(li.id));
-  saveToDo();
+  if (!confirm('확인(예) 또는 취소(아니오)를 선택해주세요.')) {
+    return;
+  } else {
+    const li = event.target.parentElement;
+    li.remove();
+    toDos = toDos.filter((item) => item.id != parseInt(li.id));
+    saveToDo();
+  }
 }
 
 function paintToDo(newToDoObj) {
