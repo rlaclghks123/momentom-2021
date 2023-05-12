@@ -42,7 +42,11 @@ function paintToDo(newToDoObj) {
 
 function handleToDoFormSubmit(event) {
   event.preventDefault();
-  const newToDo = toDoInput.value;
+  const newToDo = toDoInput.value.trim();
+  if (newToDo === '') {
+    alert('값을 입력해주세요');
+    return;
+  }
   toDoInput.value = '';
   const newToDoObj = {
     text: newToDo,
