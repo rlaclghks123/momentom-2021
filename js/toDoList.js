@@ -16,7 +16,7 @@ function saveToDo() {
 }
 
 function deleteToDo(event) {
-  if (!confirm('확인(예) 또는 취소(아니오)를 선택해주세요.')) {
+  if (!confirm('정말 삭제 하시겠습니까?')) {
     return;
   } else {
     const li = event.target.parentElement;
@@ -42,11 +42,14 @@ function paintToDo(newToDoObj) {
 
 function handleToDoFormSubmit(event) {
   event.preventDefault();
+
   const newToDo = toDoInput.value.trim();
+
   if (newToDo === '') {
     alert('값을 입력해주세요');
     return;
   }
+
   toDoInput.value = '';
   const newToDoObj = {
     text: newToDo,
