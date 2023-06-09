@@ -66,7 +66,6 @@ function handleToDoListCloseBtn() {
 }
 
 function handleToDoListOpenBtn(e) {
-  console.log(e);
   toDoListBox.style.display = 'flex';
 }
 
